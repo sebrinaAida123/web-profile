@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&family=Tilt+Warp&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+  background-color: #b7b78a;
+  padding: 2px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 6rem;
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  font-weight: bolder;
+}
+
+main {
+  padding: 20px;
+  gap: 1.5rem;
+  display: flex;
+  margin: 50px;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: #eee;
+  background-color: #658864;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #00425a;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+  margin: 50px;
+}
+
+.jumbotron {
+  font-size: 24px;
+  padding: 20px;
+  background-color: #658864;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-family: "Tilt Warp", cursive;
+}
+
+.profil header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profil img {
+  width: 200px;
+}
+
+.bab {
+  box-shadow: 0 2px 8px 2px rgba(27, 84, 18, 0.806);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
